@@ -1,0 +1,148 @@
+<!-- 
+=============================
+    _   ______  ____  ______
+   / | / / __ \/ __ \/ ____/
+  /  |/ / / / / / / / __/   
+ / /|  / /_/ / /_/ / /___   
+/_/ |_/\____/_____/_____/   
+
+=============================
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>N O D E</title>
+    <meta name="google-site-verification" content="KAh0wcTC2Anz5ea6Kq26RuhsiUKx5FD3D4HZAJdfaf4" />
+    <link rel="shortcut icon" href="images/avatar.png">
+    <link rel="alternate" href="https://n-o-d-e.net/rss/rss.xml" type="application/rss+xml" title="N O D E"/>
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+</head>
+
+<body>
+    
+    <div id="page">
+        <div id="content">
+
+        <!--HEADER SECTION -->
+        <div id="header"><pre>
+<a class="node" href="http://n-o-d-e.net">
+&#215;&#215;   &#215;&#215;    &#215;&#215;&#215;&#215;&#215;    &#215;&#215;&#215;&#215;&#215;&#215;    &#215;&#215;&#215;&#215;&#215;&#215; 
+&#215;&#215;&#215;  &#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;      
+&#215;&#215; &#215; &#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;&#215;&#215;&#215;   
+&#215;&#215;  &#215;&#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;      
+&#215;&#215;   &#215;&#215;    &#215;&#215;&#215;&#215;&#215;    &#215;&#215;&#215;&#215;&#215;&#215;    &#215;&#215;&#215;&#215;&#215;&#215;</a> 
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</pre>
+            </div>
+
+            <!--CONTENT -->
+            
+            <div id="list">
+
+                <div class="title">
+                HOW TO CREATE A POCKET NODE<br>
+                --
+                </div>
+
+                <div id="post">
+                <p>This brief guide will show you how to make the Pocket Node. It's not essential to follow every point exactly, and you can change as you see fit.</p>
+
+                <img src="https://i.imgur.com/XHas1VI.png">
+
+
+                <p class="subtitle">FILES</p>
+
+                <p>- 3D STL files (https://github.com/N-O-D-E/PocketNode)<br>
+                - mSATA adaptor pinout (https://github.com/N-O-D-E/PocketNode/blob/master/mSATA_pinout.png)<br>
+                - GPIO pinout (https://github.com/N-O-D-E/PocketNode/blob/master/GPIO_pinout.png)</p>
+
+
+                <p class="subtitle">PARTS / MATERIALS</p>
+
+                <p>- Raspberry Pi 3<br>
+                - 5v Fan (http://www.ebay.co.uk/itm/161934352894)<br>
+                - 4x small self-adhesive rubber feet<br>
+                - 2x M2.5 x 20mm machine screws<br>
+                - 6x M2.5 x 14mm machine screws<br>
+                - 4x M2 x 10mm machine screws<br>
+                - 8x M2.5 hex nuts<br>
+                - 4x M2 hex nuts<br>
+                - 2x Female jumper wires<br>
+                - USB Male breakout board<br>
+                - Micro USB breakout board (http://www.ebay.co.uk/itm/111931758474)<br>
+                - RPi3 compatible heatsinks<br>
+                - USB 3.0 to mSATA adaptor card (http://www.ebay.co.uk/itm/121978560923)<br>
+                - Some thin wire<br>
+                - Heatshrink tubing</p>
+
+
+                <p class="subtitle">TOOLS</p>
+
+                <p>- M2.5 tap wrench<br>
+                - Soldering iron<br>
+                - Craft knife</p>
+
+
+                <p class="subtitle">HOW-TO</p>
+
+                <p>Step 1. First thing to do is 3D print the case. If you don't own a printer, you can send the STL files to a service like 3dhubs.com</p>
+
+                <p>Step 2. Remove the support structure around the micro USB hole, and the hole for the USB plug using a craft knife</p>
+
+                <p>Step 3. Desolder the USB 3.0 plug from the mSATA adaptor. Be careful not to damage the board here, since it is a little fragile. You'll also need to screw it in place with the 2 M2 screws.</p>
+
+                <p>Step 4. Now you need to create the custom USB adaptor. What I did was desolder the male USB plug from the breakout board, cut it down, and re-solder it at a 90 degree angle. If you don't care about saving space, you could just skip this step and use a regular USB plug.</p>
+
+                <p>Step 5. Strip/tin 4 wires, and solder the mSATA adaptor to the USB plug. Check the "mSATA adaptor pinout" image in the FILES section above. When you're finished, you can cover this new 90 degree plug in heatshrink.</p>
+
+                <p>Step 6. Now strip and tin the 2 jumper wires, then solder them to the micro USB breakout. Make sure the length is long enough to reach the GPIO pins when the Pi is sitting on top.</p>
+
+                <p>Step 7. Screw the fan in with the 4x M2.5 x 14mm screws and nuts, and also the micro USB breakout with the 2x M2 x 10mm screws and nuts.</p>
+
+                <p>Step 8. Add your SSD, screw it in. Add the Pi3, and screw it on the top right and bottom left. Then plug in the 90 degree custom USB plug.</p>
+
+                <p>Step 9. Use the "GPIO pinout" image in the FILES section to plug in the fan and micro USB breakout to the Pi's GPIO pins.</p>
+
+                <p>Step 10. Tap the two M2.5 holes on the top half of the case.</p>
+
+                <p>Step 11. Finally, place the two case halves together, and screw the 2x M2.5 x 20mm machine screws into the case. Add the rubber feet, and you're good to go.</p>
+
+
+                <p class="subtitle">CONCLUSION</p>
+
+                <p>In order for this to not overheat, you'll need to place it on a flat, solid surface. Also, make sure that the fan is not covered, and has plenty of room to operate in.</p>
+
+                <p>The Pi3 is also a little finicky about the power supply and micro USB cable you use, so make sure both are rated to work with it.</p>
+
+
+                <p>--<br>
+                BY NODE</p>
+
+                </div>
+
+
+            </div>
+            
+            <!--FOOTER SECTION -->
+
+            <div id="footer">
+                <pre>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</pre>
+                <div class="filter">
+                <a href="http://n-o-d-e.net">HOME</a>
+
+                <span class="footdogs">  &#215; </span>
+                <a href="http://N-O-D-E.net/shop/">SHOP</a>
+                
+                <span class="footdogs">  &#215; </span>
+                <a target="_blank" href="http://patreon.com/N_O_D_E_">PATREON</a>
+
+                <span class="footdogs">  &#215; </span>
+                <a target="_blank" href="https://github.com/N-O-D-E/N-O-D-E.net">GITHUB</a>
+                </div>
+
+        </div>
+
+</body>
+</html>
