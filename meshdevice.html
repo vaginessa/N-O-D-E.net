@@ -1,0 +1,156 @@
+<!-- 
+=============================
+    _   ______  ____  ______
+   / | / / __ \/ __ \/ ____/
+  /  |/ / / / / / / / __/   
+ / /|  / /_/ / /_/ / /___   
+/_/ |_/\____/_____/_____/   
+
+=============================
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>N O D E</title>
+    <meta name="google-site-verification" content="KAh0wcTC2Anz5ea6Kq26RuhsiUKx5FD3D4HZAJdfaf4" />
+    <link rel="shortcut icon" href="images/avatar.png">
+    <link rel="alternate" href="https://n-o-d-e.net/rss/rss.xml" type="application/rss+xml" title="N O D E"/>
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+</head>
+
+<body>
+    
+    <div id="page">
+        <div id="content">
+
+        <!--HEADER SECTION -->
+        <div id="header"><pre>
+<a class="node" href="http://n-o-d-e.net">
+&#215;&#215;   &#215;&#215;    &#215;&#215;&#215;&#215;&#215;    &#215;&#215;&#215;&#215;&#215;&#215;    &#215;&#215;&#215;&#215;&#215;&#215; 
+&#215;&#215;&#215;  &#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;      
+&#215;&#215; &#215; &#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;&#215;&#215;&#215;   
+&#215;&#215;  &#215;&#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;      
+&#215;&#215;   &#215;&#215;    &#215;&#215;&#215;&#215;&#215;    &#215;&#215;&#215;&#215;&#215;&#215;    &#215;&#215;&#215;&#215;&#215;&#215;</a> 
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</pre>
+            </div>
+
+            <!--CONTENT -->
+            
+            <div id="list">
+
+                <div class="title">
+                HELP BUILD AN OFF GRID COMMUNICATIONS / MESH NETWORK DEVICE<br>
+                --
+                </div>
+
+                <div id="post">
+                <p>For a while I've been considering making a packet radio terminal, a self contained computer with screen, keyboard, and the ability to send data using a radio instead of wifi or cell networks.</p>
+
+                <p>After working on and developing it for a few months though, I realized that this is actually the wrong way to go about this type of device, and after looking more closely at the GoTenna Mesh, I think creating an open source alternative with more features would be more versatile, and an order of magnitude cheaper.</p>
+
+                <p>I haven't made this yet, and I wanted to ask whether some of you would like to work on this and develop a platform, I guess in a similar vein to the Piratebox project, but for long distance off-grid communications. It wouldn't replace the internet as a whole, but could cater for low data functions like text messaging. Let me explain.</p>
+
+                <div class="videowrapper">
+                    <iframe src="https://www.youtube.com/embed/zXTEWFb_6w4?rel=0&amp;showinfo=0" frameborder="0"></iframe>
+                </div>
+                <p class="description">
+                - <a href="https://www.youtube.com/watch?v=zXTEWFb_6w4" target="_blank">Youtube link</a><br>
+                - <a href="https://archive.org/download/meshdevice/meshdevice.mp4" target="_blank">Archive.org mirror</a><br>
+                - <a href="https://archive.org/download/meshdevice/meshdevice_archive.torrent" target="_blank">Torrent</a><br>
+                </p>
+
+
+                <p class="subtitle">THE MAIN IDEA</p>
+
+                <p>The main idea is to create a little, inexpensive device that can easily fit in your pocket, or strap on your backpack.</p>
+
+                <p>It would hook up to your smartphone, tablet or computer over bluetooth, and would require a specially designed app to work.</p>
+
+                <p>This way of doing it is much better than having a standalone computer radio terminal since it saves more space, is way cheaper, and works with all your existing devices. The devices can also still use their wifi and cell service too since you're not taking up the network interface.</p>
+
+                <p>The app would work just like an ordinary messaging app, but when you press send, it transfers the message to the radio device, then broadcasts that over LoRa radio frequencies, potentially reaching many kilometers away.</p>
+
+                <p>The other recipient has a paired device that is turned on and listening for a specific message signature, and when the radio waves reach them, the device alerts the persons phone, and they receive the new message. Simple, private communications over long distance.</p>
+
+                <p>The devices could also potentially work as a mesh network too, by relaying and rebroadcasting messages between nodes, potentially allowing for much greater coverage.</p>
+
+                <p>Outside of the GoTenna's features, I think what would add more usefulness would be the option of solar charging, and the ability to work like a powerbank and charge other devices through USB. This would make sense if you already strap it to your backpack to increase range, and would make it truly off-grid.</p>
+
+                <p>This technology works best when sending small amounts of data, and when you combine that with potential internet bridges, meaning someone's phone could act like an exit node, you open up the possibility to other uses like broadcasting bitcoin transactions, or setting up a twitter-like social network. Depending on the amount of nodes, you could be potentially post data anonymously.</p>
+
+
+                <p class="subtitle">USE CASES</p>
+
+                <p>Much like the GoTenna, this would be useful for times when you can't get any cell or wifi service. Trekking in the wilderness, travelling abroad, being at festivals or other large gatherings etc.</p>
+
+                <p>Also, obviously this could be helpful during times when the power is out during disasters or other chaotic times, especially if you mix the messaging with gps tracking.</p>
+
+
+                <p class="subtitle">POSSIBLE HARDWARE</p>
+
+                <p>After a lot of research, I think the cheapest, and easiest hardware to achieve this is as follows:</p>
+
+                <p>- A Raspberry Pi Zero W. This would act as the brains of the device. The documentation and linux system should make this much easier to work with, and develop more features on. It's also got bluetooth built in for pairing with phones and computers.</p>
+
+                <p>- A LoRa radio chip with antenna. These are pretty cheap, and seem relatively simple to work with. The protocol was originally designed for Internet of Things applications, but it would be perfect for this. Some of these chips, coupled with a good antenna, boast maximum ranges of around 30km. There are some addons available specifically for Raspberry Pi's, but I think it may be worth designing one just for this device.</p>
+
+                <p>- You could add an optional GPS chip too, which could be helpful in certain situations. Obviously, it would have a physical switch, so you can turn it off completely when it's not needed.</p>
+
+                <p>- A lipo battery. For this size, I think we could get maybe 2-3000mAh, and many hours of use on one charge.</p>
+
+                <p>- Small solar panel for emergency charging. This could be handy if you're in the wilderness, or if the power goes out for whatever reason. If the design is somewhat similar to the GoTenna, you could attach it to your backpack, to both increase range, and charge at the same time.</p>
+
+                <p>- A charging board. These PCBs are amazing. Search for "DIY power bank pcb" on Ebay for ones as cheap as one dollar.</p>
+
+                <p>They allow you to:</p>
+
+                <p>+ Power the Raspberry Pi, GPS and radio chips.<br>
+                + Charge the internal lipo battery through micro USB<br>
+                + Also charge the battery through a solar panel<br>
+                + Read out battery level through built in LEDs<br>
+                + Use the battery as a powerbank to charge other devices over USB when needed.</p>
+
+                <p>Total cost of parts, plus a 3d printed case should be around $35</p>
+
+
+                <p class="subtitle">WHAT DO YOU THINK?</p>
+
+                <p>So what do you think? Let me know in the comments. I'm not sure how good it would work, but I want to try it and find out. I know a lot of you are very capable, and I think I would need some help on the software side of things, especially the phone and desktop apps that interface with this. What technologies do you think would be the best for the project? Also, what should it be called?</p>
+
+                <p>Obviously, everything that's developed would be open source, and available for everyone to make their own versions. I want to make it as easy as possible for someone to buy the parts and make their own if they wish. If we create a platform, then people can make all sorts of devices that could work with it.</p>
+
+                <p>Let's get something going. Thanks for watching, and I look forward to your feedback.</p>
+
+
+                <p>--<br>
+                BY NODE</p>
+
+                </div>
+
+
+            </div>
+            
+            <!--FOOTER SECTION -->
+
+            <div id="footer">
+                <pre>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</pre>
+                <div class="filter">
+                <a href="http://n-o-d-e.net">HOME</a>
+
+                <span class="footdogs">  &#215; </span>
+                <a href="http://N-O-D-E.net/shop/">SHOP</a>
+                
+                <span class="footdogs">  &#215; </span>
+                <a target="_blank" href="http://patreon.com/N_O_D_E_">PATREON</a>
+
+                <span class="footdogs">  &#215; </span>
+                <a target="_blank" href="https://github.com/N-O-D-E/N-O-D-E.net">GITHUB</a>
+                </div>
+
+        </div>
+
+</body>
+</html>
