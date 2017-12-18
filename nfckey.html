@@ -1,0 +1,137 @@
+<!-- 
+=============================
+    _   ______  ____  ______
+   / | / / __ \/ __ \/ ____/
+  /  |/ / / / / / / / __/   
+ / /|  / /_/ / /_/ / /___   
+/_/ |_/\____/_____/_____/   
+
+=============================
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>N O D E</title>
+    <meta name="google-site-verification" content="KAh0wcTC2Anz5ea6Kq26RuhsiUKx5FD3D4HZAJdfaf4" />
+    <link rel="shortcut icon" href="images/avatar.png">
+    <link rel="alternate" href="https://n-o-d-e.net/rss/rss.xml" type="application/rss+xml" title="N O D E"/>
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+</head>
+
+<body>
+    
+    <div id="page">
+        <div id="content">
+
+        <!--HEADER SECTION -->
+        <div id="header"><pre>
+<a class="node" href="http://n-o-d-e.net">
+&#215;&#215;   &#215;&#215;    &#215;&#215;&#215;&#215;&#215;    &#215;&#215;&#215;&#215;&#215;&#215;    &#215;&#215;&#215;&#215;&#215;&#215; 
+&#215;&#215;&#215;  &#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;      
+&#215;&#215; &#215; &#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;&#215;&#215;&#215;   
+&#215;&#215;  &#215;&#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;      
+&#215;&#215;   &#215;&#215;    &#215;&#215;&#215;&#215;&#215;    &#215;&#215;&#215;&#215;&#215;&#215;    &#215;&#215;&#215;&#215;&#215;&#215;</a> 
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</pre>
+            </div>
+
+            <!--CONTENT -->
+            
+            <div id="list">
+
+                <div class="title">
+                THE NFC KEY<br>
+                --
+                </div>
+
+                <div id="post">
+                <p>NFC is a cool technology, but there are some security concerns, especially considering how easy it is to passively read tags.</p> 
+
+                <p>That's why I've created a simple little device called the NFC Key, which prevents passive activation, as well as adding a bit more functionality than a regular tag.</p>
+
+                <div class="videowrapper">
+                    <iframe src="https://www.youtube.com/embed/5nOzobRr4kc?rel=0&amp;showinfo=0" frameborder="0"></iframe>
+                </div>
+                <p class="description">
+                - <a href="https://www.youtube.com/watch?v=5nOzobRr4kc" target="_blank">Youtube link</a><br>
+                - <a href="https://archive.org/download/nfckey/nfckey.mp4" target="_blank">Archive.org mirror</a><br>
+                - <a href="https://archive.org/download/nfckey/nfckey.torrent" target="_blank">Torrent</a><br>
+                </p>
+
+
+                <p class="subtitle">DESIGN</p>
+
+                <p>It's a keychain sized little PCB, with a built in antenna on one side, and the NFC chips and buttons on the other.</p>
+
+                <p>This little device sports two beefy NFC chips, each with 8KB of storage capacity. This is way way bigger than most NFC tags out there.</p>
+
+                <p>I've set it up so both chips work with the single antenna, and you need to press a button to activate it. You press the left button, you get the contents of the left chip, and press the right for the contents of the right.</p>
+
+                <p><p>When neither buttons is pressed, the circuit from the antenna to the chips are broken, and it's physically impossible to passively read it's contents.</p>
+
+                <p>The antenna itself was designed using this useful online generator, and it has enough inductance to run one chip at a time. It's also intentionally tuned just outside of the 13.56MHz NFC standard, for security, so you have to basically place the tag directly on top of the reader for it to work.</p>
+
+                <p>https://kbeckmann.github.io/nfc-antenna-generator/</p>
+
+                <p>Heatshrink covers the outside, and helps protect the components, for when it's in your pocket or whatever, just like the Open Dime.</p>
+
+                <p>I don't have an Iphone to test on, but it works well on all the NFC capable Android phones and tablets I've tested.</p>
+
+
+                <p class="subtitle">USE-CASES</p>
+
+                <p>The original use case I had in mind for this was for sharing GPG public keys in person. The two 8KB chips are pretty well suited for this kind of thing, and are big enough for most key lengths.</p>
+
+                <p>Outside of that, you have the standard door entry systems, personal business card type applications, bitcoin addresses etc. Some bitcoin ATMs use NFC, so it might be useful there, plus I've also seen people clone their tap-to-pay credit cards, and the activation buttons on this could make it a little more secure in terms of stopping passive activation.</p>
+
+
+                <p class="subtitle">OPEN SOURCE</p>
+
+                <p>As always, all of this is open source, so if you want to build your own, the PCB files are in a new github repo.</p>
+
+                <p>https://github.com/N-O-D-E/NFC_Key</p>
+
+                <p>Besides the boards, you'll need the following components:</p>
+
+                <p>- 2x STMicroelectronics M24SR64-YDW6T 8KB RFID Chips<br>
+                - 2x 4.5x4.5x0.5mm 4 Pin Momentary Switch<br>
+                - Heatshrink Tubing (optional)</p>
+
+                <p>So that's the NFC Key, a simple little project. Hopefully some of you will find it useful. Thanks for watching, and I'll see you in the next video.</p>
+
+
+                <p class="subtitle">AVAILABLE SOON</p>
+
+                <p>https://N-O-D-E.net/shop</p>
+
+                <p>--<br>
+                BY NODE</p>
+
+                </div>
+
+
+            </div>
+            
+            <!--FOOTER SECTION -->
+
+            <div id="footer">
+                <pre>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</pre>
+                <div class="filter">
+                <a href="http://n-o-d-e.net">HOME</a>
+
+                <span class="footdogs">  &#215; </span>
+                <a href="http://N-O-D-E.net/shop/">SHOP</a>
+                
+                <span class="footdogs">  &#215; </span>
+                <a target="_blank" href="http://patreon.com/N_O_D_E_">PATREON</a>
+
+                <span class="footdogs">  &#215; </span>
+                <a target="_blank" href="https://github.com/N-O-D-E/N-O-D-E.net">GITHUB</a>
+                </div>
+
+        </div>
+
+</body>
+</html>
