@@ -1,0 +1,140 @@
+<!-- 
+=============================
+    _   ______  ____  ______
+   / | / / __ \/ __ \/ ____/
+  /  |/ / / / / / / / __/   
+ / /|  / /_/ / /_/ / /___   
+/_/ |_/\____/_____/_____/   
+
+=============================
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>N O D E</title>
+    <meta name="google-site-verification" content="KAh0wcTC2Anz5ea6Kq26RuhsiUKx5FD3D4HZAJdfaf4" />
+    <link rel="shortcut icon" href="images/avatar.png">
+    <link rel="alternate" href="https://n-o-d-e.net/rss/rss.xml" type="application/rss+xml" title="N O D E"/>
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+</head>
+
+<body>
+    
+    <div id="page">
+        <div id="content">
+
+        <!--HEADER SECTION -->
+        <div id="header"><pre>
+<a class="node" href="http://n-o-d-e.net">
+&#215;&#215;   &#215;&#215;    &#215;&#215;&#215;&#215;&#215;    &#215;&#215;&#215;&#215;&#215;&#215;    &#215;&#215;&#215;&#215;&#215;&#215; 
+&#215;&#215;&#215;  &#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;      
+&#215;&#215; &#215; &#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;&#215;&#215;&#215;   
+&#215;&#215;  &#215;&#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;   &#215;&#215;      
+&#215;&#215;   &#215;&#215;    &#215;&#215;&#215;&#215;&#215;    &#215;&#215;&#215;&#215;&#215;&#215;    &#215;&#215;&#215;&#215;&#215;&#215;</a> 
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</pre>
+            </div>
+
+            <!--CONTENT -->
+            
+            <div id="list">
+
+                <div class="title">
+                ICEBOX: COLD WALLET DEVICE<br>
+                --
+                </div>
+
+                <div id="post">
+                <p>Here's a project I've been working on. It's called the Icebox, and it's a mixed technology cold wallet, designed for long term, offline storage of cryptocurrencies.</p>
+
+                <div class="videowrapper">
+                    <iframe src="https://www.youtube.com/embed/jx_70pQcX78?rel=0&amp;showinfo=0" frameborder="0"></iframe>
+                </div>
+                <p class="description">
+                - <a href="https://www.youtube.com/watch?v=jx_70pQcX78" target="_blank">Youtube link</a><br>
+                - <a href="https://archive.org/download/icebox/icebox.mp4" target="_blank">Archive.org mirror</a><br>
+                - <a href="https://archive.org/download/icebox/icebox.torrent" target="_blank">Torrent</a><br>
+                </p>
+
+
+                <p class="subtitle">PARTS</p>
+
+                <p>- Front and back custom PCB (0.6mm thickness)<br>
+                - 1oz silver bar capsule<br>
+                - 2x M24SR16-YDW6T/2 2KB NFC Chips<br>
+                - 6mm Sticker Dots<br>
+                - 5x5x1.5mm Momentary Switches (SMD)<br>
+                - 1x1inch Ziplock Bag<br>
+                - 3D Printed Frame</p>
+
+
+                <p class="subtitle">DESIGN</p>
+
+                <p>The device is encased inside a hard plastic shell, normally used for storing 1oz silver bars, and it's intentionally designed to look fairly inconspicuous.</p>
+
+                <p>The idea is to backup your public and private keys in various ways, to increase longevity and usefulness. The 3 methods included are:</p>
+
+                <p>NFC. Similar to the NFC key I showed you a little while back, this also has its own custom NFC antenna PCB, that has two 2KB chips, one for your public keys, aka your addresses, and the other for private keys, which can be used to spend the funds.</p>
+
+                <p>The circuit between the antenna and chip is broken using two mini button switches, meaning unless one of them is pressed, it's physically impossible to passively read the contents of the corresponding chip. If your phone has NFC capabilities, you can simply use one of the many NFC apps to write directly to the chips. So far I've only tested this on Android phones.</p>
+
+                <p>By default, the NFC chip for the public key is activated, meaning you can scan the Icebox to check your balances, without opening it. You can disable this feature by simply removing the little round sticker from cover insert.</p>
+
+                <p>The next way to store the keys is using a micro SD card. These are already shockproof, and can withstand water immersion for a few days - though I obviously don't recommend doing that. There's a 3D printed frame which fits in nicely with the rest of the device. Besides just holding keys, the extra storage capacity allows for more options, like including wallet software for multiple platforms, and instructions for what to do to recover the funds.</p>
+
+                <p>You can also go the low tech route, by writing out your private key or seed on a piece of paper, and placing it inside a mini ziplock bag. Alternatively, you could print this out, and include QR codes too.</p>
+
+                <p>It's worth reminding that it's very important that you're not exporting or loading private keys on computers or phones that may be compromised. Using an offline system which a fresh OS install would be useful if you're paranoid, but this process is intentionally left open, so you can do it however you like.</p>
+
+                <p>Once your keys are stored in these ways, you assemble the device, and close it shut. The plastic case has a very snug fit, and requires a sharp knife or something similar to open it up again. The closed icebox is already sturdy, but you could increase that further by super gluing the seam, sealing it completely.</p>
+
+                <p>You then store it in a safe and dry place.</p>
+
+
+                <p class="subtitle">OPEN SOURCE</p>
+
+                <p>As always, the 3d printing and design files for this are open source are available if you want to make or iterate on one.</p>
+
+                <p>https://github.com/N-O-D-E/icebox</p>
+
+
+                <p class="subtitle">CONCLUSION</p>
+
+                <p>So that's the Icebox, a sturdy little device, which is a bit more useful than a regular paper wallet. Obviously it's not indestructible, so you'll have to be sensible about how and where it's stored, but if you're into crypto currencies, you probably knew that already. What do you think?</p>
+
+                <p>I've made a few of these, so if you want to pick one up, they're available in the shop now.</p>
+
+                <p>Thanks for watching.</p>
+
+
+                <p>--<br>
+                BY NODE</p>
+
+                </div>
+
+
+            </div>
+            
+            <!--FOOTER SECTION -->
+
+            <div id="footer">
+                <pre>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</pre>
+                <div class="filter">
+                <a href="http://n-o-d-e.net">HOME</a>
+
+                <span class="footdogs">  &#215; </span>
+                <a href="http://N-O-D-E.net/shop/">SHOP</a>
+                
+                <span class="footdogs">  &#215; </span>
+                <a target="_blank" href="http://patreon.com/N_O_D_E_">PATREON</a>
+
+                <span class="footdogs">  &#215; </span>
+                <a target="_blank" href="https://github.com/N-O-D-E/N-O-D-E.net">GITHUB</a>
+                </div>
+
+        </div>
+
+</body>
+</html>
